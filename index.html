@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathéo Fontaine</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-cloner1.css">
+    <link rel="stylesheet" href="styles/style-timeline.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/732a0e58b0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style-bande.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <link rel="stylesheet" href="./styles/style-portfolio.css">
+    <link rel="icon" href="/images/3.png">
+    
+</head>
+<body>
+    
+    <header id="nav">
+        <div id="menu_1">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+        <a class="logo" href="index.html"><img src="./images/3.png" alt=""></a>
+        <div id="menu_2">
+            <ul>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="fond_haut">
+        <img id="images" src="images/fond_haut.jfif" alt="">
+        <div id="text_over_fond_haut">
+            <h1 id="main-title" class="text-over">Mathéo Fontaine</h1>
+            <h3 id="second-title" class="text-over">Découvrez mes projets</h3>
+        </div>
+    </section>
+
+    <main>
+        <div id="about-me">
+            <h4 id="section-title">À propos de moi</h4>
+            <p id="section-text">Je suis en deuxième année à MyDigitalSchool à Angers. Je suis passionné par l'informatique et le développement web. J'ai développé plusieurs compétences dans certains langages tels que le Lua, HTML, CSS, JS, PHP, SASS, Python et je me forme en ReactJS et VueJS. Je souhaite donc devenir à terme Chef de projet.<br> <br>Ce site à été développer par mes soins en utilisant mes propres compétences.</p>
+            <div id="bande">
+                <div class="marquee">
+                    <ul class="marquee-content">
+                        <li><i class="fa-brands fa-php"></i></li>
+                        <li><i class="fa-brands fa-js"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fa-brands fa-react"></i></li>
+                        <li><i class="fa-brands fa-vuejs"></i></li>
+                        <li><i class="fa-brands fa-sass"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <h4 id="stage">Je suis à la recherche d'un <strong>stage</strong> pour ma deuxième année à partir du <strong>25 mars</strong> pour une durée de <strong>2 mois minimum</strong> dans le <strong>développement web</strong>.</h4>
+            <div class="boite">
+                <div class="box1">
+                    <h5 id="quality">Je suis <span id="multitext"></span></h5>
+                    <script>
+                        var typed = new Typed('#multitext', {
+                            strings : ['Autodidacte', 'Curieux', 'Autonome'],
+                            loop : true,
+                            typeSpeed : 100,
+                            backSpeed : 80,
+                            backDelay : 1500
+                        });
+                    </script>
+                </div>
+                <div class="box2" id="cloner">
+                    <script type="module">
+                        import { Application } from './cloner1/runtime.js';
+                        const canvas = document.getElementById('canvas3d');
+                        const app = new Application(canvas);
+                        app.load('./cloner1/scene.splinecode');
+                    </script>
+                    <canvas id="canvas3d"></canvas>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="portfolio">
+            <section id="projets">
+                <h4 id="section-title">Mon portfolio</h4>
+                <div class="blog-slider">
+                  <div class="blog-slider__wrp swiper-wrapper">
+                    <div class="blog-slider__item swiper-slide">
+                      <div class="blog-slider__img">
+                        
+                        <img src="images/screen-laroma.png" alt="">
+                      </div>
+                      <div class="blog-slider__content">
+                        <span class="blog-slider__code">React, Node, AJAX</span>
+                        <div class="blog-slider__title">L'Aroma</div>
+                        <div class="blog-slider__text">Site d'un bar fictif qui réunit plusieurs salle à thème en fonction des envies des clients. Réalisé en 4 jours en React, Node et l'API AJAX pour la BDD.</div>
+                        <a target="_blank" href="https://laroma.vercel.app/" class="blog-slider__button">Voir le projet</a>
+                      </div>
+                    </div>
+                    <div class="blog-slider__item swiper-slide">
+                      <div class="blog-slider__img">
+                        <img src="images/screen-tiky.png" alt="">
+                      </div>
+                      <div class="blog-slider__content">
+                        <span class="blog-slider__code">React</span>
+                        <div class="blog-slider__title">Tiky</div>
+                        <div class="blog-slider__text">Application fictive de paris sportif avec un système de salon pour streamer un match avec ses amis. Réalisé en 3 jours en React.</div>
+                        <a href="tiky.html" class="blog-slider__button">Voir le projet</a>
+                      </div>
+                    </div>
+                    <div class="blog-slider__item swiper-slide">
+                      <div class="blog-slider__img">
+                        <img src="images/screen-karst.png" alt="">
+                      </div>
+                      <div class="blog-slider__content">
+                        <span class="blog-slider__code">React</span>
+                        <div class="blog-slider__title">Karst</div>
+                        <div class="blog-slider__text">Site e-commerce d'une marque, reproduction des pages produits. Réalisé en React.</div>
+                        <a target="_blank" href="https://karst.vercel.app/" class="blog-slider__button">Voir le projet</a>
+                      </div>
+                    </div>
+                    
+                    <div class="blog-slider__item swiper-slide">
+                      <div class="blog-slider__img">
+                        <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+                      </div>
+                      <div class="blog-slider__content">
+                        <span class="blog-slider__code"></span>
+                        <div class="blog-slider__title">D'autres de mes projets sont en cours de réalisation et seront mis à jour sur mon portfolio.</div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="blog-slider__pagination"></div>
+                </div>
+            </section>
+        </div>
+        <div id="parcours">
+            <h4 id="section-title">Mon parcours</h4>
+            <section class="timeline">
+                <div class="container">
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                
+                        <div class="timeline-content js--fadeInLeft">
+                            <h2>Lycée Institution Mongazon</h2>
+                            <div class="date">2022</div>
+                            <blockquote>Mention 'Assez bien'</blockquote>
+                            <p>Spécialités NSI et LLCER - Option Sport</p>
+                            
+                        </div>
+                    </div> 
+                
+                    <div class="timeline-item">
+                
+                        <div class="timeline-img"></div>
+                
+                        <div class="timeline-content js--fadeInRight">
+                            <h2>Ouvrier</h2>
+                            <div class="date">Juin 2022</div>
+                            <blockquote>Mamie Fada</blockquote>
+                            <p>Déplacement de gravas, aplanissement de terrain</p>
+                        
+                        </div>
+                
+                    </div>   
+                
+                    <div class="timeline-item">
+                
+                        <div class="timeline-img"></div>
+                
+                        <div class="timeline-content js--fadeInLeft">
+                            <div class="date">Juin 2022</div>
+                            <h2>Mise en place de la salle</h2>
+                            <blockquote>La Cale</blockquote>
+                            <p>Mise en place des tables et chaises du restaurant et de la terrasse</p>
+                        </div>
+                    </div>   
+                
+                    
+                    <div class="timeline-item">
+                        
+                        <div class="timeline-img"></div>
+                        
+                        <div class="timeline-content js--fadeInRight">
+                            <h2>MyDigitalSchool</h2>
+                            <div class="date">2022- 2025</div>
+                            <blockquote>Bachelor cycle Web et Digital</blockquote>
+                            <p>Développement web - WebDesign - CMS - Marketing - Création numérique</p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                
+                        <div class="timeline-img"></div>
+                
+                        <div class="timeline-content js--fadeInLeft">
+                            <div class="date">Juil - Sept 2023</div>
+                            <h2>Manutentionnaire</h2>
+                            <blockquote>R.A.S Interim</blockquote>
+                            <p>Préparation de commande, déchargement et chargement de camion, tri de colis, mise en forme de palette, déménagement de mobilier, montage de meuble</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                
+                        <div class="timeline-img"></div>
+                
+                        <div class="timeline-content js--fadeInRight">
+                            <div class="date">Sept 2023 - Décembre 2023</div>
+                            <h2>Livreur</h2>
+                            <blockquote>Speed Burger</blockquote>
+                            <p>Livraison de commande, préparation de commande</p>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+        </div>
+        
+
+        <div id="contact">
+            <h4 id="section-title">Contact</h4>
+            <p id="section-text">Si vous êtes interéssé par mon profil, vous pouvez me joindre via mes réseaux.</p>                    
+            <ul>
+                <div id="social">
+                    <a class="media" target="_blank" href="https://www.instagram.com/matheoftnepro/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="media" target="_blank" href="https://twitter.com/matheoftnepro"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="media" target="_blank" href="https://www.linkedin.com/in/matheoftnepro/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="media" target="_blank" href="https://github.com/matheoftne"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div id="mailTel">
+                    <a class="media" href="mailto:matheo.fontaine.pro@gmail.com"><i class="fa-sharp fa-regular fa-envelope"></i></a>
+                    <a class="media" href="#demo"><i class="fa-sharp fa-solid fa-phone"></i></a>
+                    <div id="demo" class="modal">
+                        <div class="modal_content">
+                            <p>Mon numéro de téléphone : <br> 06 71 81 82 31</p>
+                            <a href="#" class="modal_close">&times;</a>
+                        </div>
+                    </div>
+                </div>
+            </ul>   
+            <!--<a id="btn-contact" href="contact.html">Contactez moi</a>-->
+        </div>
+    </main>
+
+    <footer>
+        
+        <div id="menu_footer">
+            <section id="fond_bas">
+                <img id="images" src="images/fond_bas.jfif" alt="">
+            </section>
+            
+            <div class="reel_footer">
+                <h6>2023 Mathéo Fontaine</h6>
+                <p>|</p>
+                <div id="mini_menu">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#parcours">Parcours</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '80px',
+            duration: 1500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('#main-title, #second-title', {delay: 500, origin: 'bottom'});
+        ScrollReveal().reveal('#quality', {delay: 600, origin: 'left'});
+        ScrollReveal().reveal('#cloner', {delay: 800, origin: 'bottom'});
+        ScrollReveal().reveal('#section-title', {delay: 500, origin: 'top'});
+        ScrollReveal().reveal('.media', {delay: 500, origin: 'top'});
+        ScrollReveal().reveal('#section-text', {delay: 500, origin: 'left'});
+        ScrollReveal().reveal('#nav', {delay: 200, origin: 'top'});
+        ScrollReveal().reveal('.reel_footer', {delay: 200, origin: 'bottom'});
+        ScrollReveal().reveal('#images', {delay: 200});
+        ScrollReveal().reveal('.js--fadeInRight', {delay: 200, origin: 'right'});
+        ScrollReveal().reveal('.js--fadeInLeft', {delay: 300, origin :'left'});
+        ScrollReveal().reveal('.timeline', {delay: 300, origin: 'bottom'});
+        ScrollReveal().reveal('.marquee', {delay: 300, origin: 'bottom'});
+        ScrollReveal().reveal('#btn-contact', {delay: 400, origin: 'left'});
+        ScrollReveal().reveal('#stage', {delay: 300, origin: 'bottom'});
+        ScrollReveal().reveal('#soon', {delay: 550, origin: 'top'});
+        ScrollReveal().reveal('#projets', {delay: 500, origin: 'top'});
+    </script>
+
+    <script src="./scripts/script-bande.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+    <script  src="./scripts/script-portolfio.js"></script>
+
+</body>
+</html>

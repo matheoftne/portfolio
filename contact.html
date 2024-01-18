@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathéo Fontaine</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/732a0e58b0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style-contact.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css'>
+</head>
+<body>
+    <main>
+      <form class="login-form" action="javascript:void(0);" name="contact" method="POST" onSubmit="submit" data-netlify="true">
+        <h1>Me contacter</h1>
+        <div class="form-input-material">
+          <input type="text" name="nom" id="nom" placeholder=" " autocomplete="off" class="form-control-material" required />
+          <label for="nom">Nom</label>
+        </div>
+        <div class="form-input-material">
+          <input type="text" name="prenom" id="prenom" placeholder=" " autocomplete="off" class="form-control-material" required />
+          <label for="prenom">Prénom</label>
+        </div>
+        <div class="form-input-material">
+          <input type="email" name="mail" id="mail" placeholder=" " autocomplete="off" class="form-control-material" required />
+          <label for="mail">Adresse email</label>
+        </div>
+        <div class="form-input-material">
+          <input type="tel" name="telephone" id="telephone" placeholder=" " autocomplete="off" class="form-control-material" required />
+          <label for="telephone">Numéro de téléphone</label>
+        </div>
+        <div class="form-input-material">
+          <input type="textarea" name="message" id="message" placeholder=" " autocomplete="off" class="form-control-material" required />
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-ghost">Envoyer</button>
+        <a class="btn btn-primary btn-ghost" href="index.html">Retourner à l'accueil</a>
+      </form>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 1500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('form', {delay: 300, origin: 'bottom'});
+    </script>
+
+</body>
+</html>
