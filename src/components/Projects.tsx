@@ -233,7 +233,7 @@ function MicroservicesPreview() {
 const PROJECTS = [
   {
     num: "01",
-    title: "Portfolio V4",
+    title: "Portfolio",
     subtitle: "This very site",
     desc: "Editorial/cinematic personal portfolio built with Next.js 16, Tailwind v4, and Framer Motion 12. Giant typography, scroll-driven animations, custom spring cursor, and word-by-word text reveals.",
     tags: ["Next.js", "TypeScript", "Framer Motion", "Tailwind v4"],
@@ -241,6 +241,7 @@ const PROJECTS = [
     href: "#",
     github: "https://github.com/matheofontaine",
     Visual: PortfolioPreview,
+    comingSoon: false,
   },
   {
     num: "02",
@@ -252,6 +253,7 @@ const PROJECTS = [
     href: "#",
     github: "https://github.com/matheofontaine",
     Visual: DashboardPreview,
+    comingSoon: true,
   },
   {
     num: "03",
@@ -263,6 +265,7 @@ const PROJECTS = [
     href: "#",
     github: "https://github.com/matheofontaine",
     Visual: MicroservicesPreview,
+    comingSoon: true,
   },
 ];
 
@@ -296,8 +299,19 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.65, ease: EASE }}
-            className="bg-white dark:bg-[#070710] flex flex-col group"
+            className="bg-white dark:bg-[#070710] flex flex-col group relative"
           >
+            {project.comingSoon && (
+              <div className="absolute inset-0 z-20 flex flex-col items-center justify-center backdrop-blur-sm bg-[#070710]/50 dark:bg-[#070710]/60">
+                <span
+                  className="text-2xl font-extrabold tracking-tight text-white mb-2"
+                  style={{ fontFamily: "var(--font-syne)" }}
+                >
+                  COMING SOON
+                </span>
+                <div className="w-8 h-px bg-violet-400/50" />
+              </div>
+            )}
             {/* Visual preview */}
             <div className="relative h-52 overflow-hidden">
               <project.Visual />
