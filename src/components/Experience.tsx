@@ -86,13 +86,12 @@ export default function Experience() {
               {/* Role + org */}
               <div>
                 {entry.logo && (
-                  <div className="h-10 w-32 mb-4 flex items-center overflow-hidden">
+                  <div className="relative h-10 w-32 mb-4">
                     <Image
                       src={entry.logo}
                       alt={entry.org}
-                      width={128}
-                      height={40}
-                      className="object-contain"
+                      fill
+                      className="object-contain object-left"
                     />
                   </div>
                 )}
