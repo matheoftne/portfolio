@@ -1,13 +1,15 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    prefix: "bump: "
     directory: "/"
     schedule:
       interval: "monthly"
+    commit-message:
+      prefix: "bump"
 
   - package-ecosystem: "github-actions"
-    prefix: "bump: "
     directory: "/"
     schedule:
       interval: "monthly"
+    commit-message:
+      prefix: "bump"
