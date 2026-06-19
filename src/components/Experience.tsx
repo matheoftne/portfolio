@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -86,10 +87,12 @@ export default function Experience() {
               <div>
                 {entry.logo && (
                   <div className="h-10 w-32 mb-4 flex items-center overflow-hidden">
-                    <img
+                    <Image
                       src={entry.logo}
                       alt={entry.org}
-                      className="w-full h-full object-contain"
+                      width={128}
+                      height={40}
+                      className="object-contain"
                     />
                   </div>
                 )}

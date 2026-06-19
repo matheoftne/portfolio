@@ -14,10 +14,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // The inline script in layout.tsx already set the class — just read it.
-    const resolved = document.documentElement.classList.contains("dark")
-      ? "dark"
-      : "light";
-    setTheme(resolved);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setTheme(document.documentElement.classList.contains("dark") ? "dark" : "light");
   }, []);
 
   const toggle = () => {
