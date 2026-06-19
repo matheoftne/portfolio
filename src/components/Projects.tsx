@@ -320,7 +320,7 @@ export default function Projects() {
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
 
               {/* Links appear on hover */}
-              <div className="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0">
+              <div className="absolute top-3 right-3 flex gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 md:translate-y-1 md:group-hover:translate-y-0">
                 <a
                   href={project.github}
                   target="_blank"
@@ -398,7 +398,7 @@ export default function Projects() {
         className="mt-10 flex justify-end"
       >
         <a
-          href="https://github.com/matheofontaine"
+          href="https://github.com/matheoftne"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors group"
