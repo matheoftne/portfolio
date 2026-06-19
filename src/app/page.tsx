@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Page() {
   return (
@@ -24,6 +25,7 @@ export default function Page() {
       <Contact />
       <Footer />
       <Analytics/>
+      <SpeedInsights/>
     </main>
   );
 }
