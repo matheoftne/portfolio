@@ -20,7 +20,7 @@ function AnimatedNumber({
   suffix: string;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const inView = useInView(ref, { once: true, margin: "0px" });
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ export default function Stats() {
             <p
               className="font-extrabold leading-none tracking-tight text-zinc-900 dark:text-white mb-3"
               style={{
-                fontSize: "clamp(52px, 7vw, 96px)",
+                fontSize: "clamp(36px, 4.5vw, 64px)",
                 fontFamily: "var(--font-syne)",
               }}
             >

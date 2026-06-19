@@ -8,21 +8,21 @@ const EASE = [0.16, 1, 0.3, 1] as const;
 const SERVICES = [
   {
     num: "01",
-    title: "Frontend\nDevelopment",
-    desc: "Pixel-perfect interfaces with React & Next.js. I care deeply about performance, accessibility, and animations that feel alive.",
-    tags: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    title: "API\nDesign & Dev",
+    desc: "Robust REST and gRPC APIs built with .NET and documented with OpenAPI. I focus on contract clarity, versioning, and performance that holds up under real traffic.",
+    tags: ["REST", "OpenAPI", ".NET", "gRPC"],
   },
   {
     num: "02",
-    title: "Backend\nEngineering",
-    desc: "Scalable APIs and robust server-side logic. From database design to containerised deployments that don't break at 3am.",
-    tags: ["Node.js", "Express", "PostgreSQL", "Docker", "REST / GraphQL"],
+    title: "Database\nEngineering",
+    desc: "Schema design, query optimisation, and migration strategies that keep your data reliable. From relational models to caching layers that cut latency.",
+    tags: ["PostgreSQL", "Redis", "MongoDB", "SQL", "Data Modelling"],
   },
   {
     num: "03",
-    title: "Full-Stack\nSolutions",
-    desc: "End-to-end product ownership. I design the schema, write the API, build the UI, and ship it. No hand-offs needed.",
-    tags: ["Architecture", "CI/CD", "Auth", "Deployment", "Monitoring"],
+    title: "Infrastructure\n& DevOps",
+    desc: "Containerised, observable, and easy to deploy. I set up CI/CD pipelines, Docker environments, and cloud infrastructure so releases stop being scary.",
+    tags: ["Docker", "CI/CD", "GitHub Actions", "Cloud", "Monitoring"],
   },
 ];
 

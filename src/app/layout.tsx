@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: "Matheo Fontaine — Software Engineer",
   description:
     "Software Engineer building modern, performant digital experiences.",
+  icons: {
+    icon: "/logos/icon-mf.svg",
+  },
 };
 
 export default function RootLayout({
