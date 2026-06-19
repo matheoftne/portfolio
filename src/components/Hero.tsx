@@ -170,8 +170,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 1 }}
             className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed max-w-sm"
           >
-            I build modern, performant web experiences — from solid architecture
-            to pixel-perfect interfaces.
+            I engineer backend systems that scale — microservices, APIs, and
+            cloud infrastructure built to last in production.
           </motion.p>
         </div>
       </motion.div>

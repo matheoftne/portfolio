@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 const STATEMENT =
-  "I turn ideas into digital products that are fast, beautiful, and built to last.";
+  "I build the backend systems that make great products work — reliable, scalable, and ready for production.";
 
 const wordVariant = {
   hidden: { y: "115%", opacity: 0 },
@@ -70,20 +70,22 @@ export default function About() {
           className="space-y-5 text-zinc-600 dark:text-zinc-400 text-[15px] leading-relaxed"
         >
           <p>
-            I&apos;m Matheo, a software engineer based in France. I&apos;m
-            currently studying at Epitech, where intense project-based learning
-            has shaped me into someone who ships first and iterates fast.
+            I&apos;m Matheo, a backend software engineer based in France.
+            I&apos;m currently studying at Epitech while working at Betclic,
+            where I own payment microservices end-to-end in a domain-driven
+            team.
           </p>
           <p>
-            I live at the intersection of engineering and design — I care about
-            code that&apos;s maintainable and interfaces that are a pleasure to
-            use. Whether it&apos;s a backend API, a UI component, or a
-            performance bottleneck, I like owning the full picture.
+            My focus is backend engineering: designing APIs, building and
+            maintaining microservices, setting up CI/CD pipelines, and keeping
+            systems observable and secure in production. I care about code
+            that&apos;s correct, resilient, and easy to reason about under
+            pressure.
           </p>
           <p>
-            When I&apos;m not building things, I&apos;m experimenting with 3D
-            graphics in Three.js, contributing to open source, or exploring
-            whatever&apos;s trending in the web ecosystem.
+            When I&apos;m not building systems, I&apos;m exploring distributed
+            architectures or going deeper into whatever makes backend
+            engineering more robust and maintainable.
           </p>
         </motion.div>
       </div>

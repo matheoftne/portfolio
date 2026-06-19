@@ -11,11 +11,14 @@ const STACK = [
   "CosmoDB",
   "AWS",
   "MongoDB",
+  "TypeScript",
   "Python",
   "Azure",
+  "Next",
   "Terraform",
   "GitHub",
   "Jenkins",
+  "JavaScript",
   "SQLDB",
   "GitHub Actions",
   "PostgreSQL",
@@ -47,7 +50,6 @@ export default function Stack() {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.035, duration: 0.4, ease: EASE }}
-            whileHover={{}}
             className="px-5 py-2.5 rounded-full border border-zinc-200 dark:border-white/10 text-sm text-zinc-600 dark:text-zinc-400 hover:border-violet-400 dark:hover:border-violet-500/60 hover:text-violet-600 dark:hover:text-violet-300 hover:bg-violet-50 dark:hover:bg-violet-500/[0.06] transition-colors duration-200"
           >
             {tech}

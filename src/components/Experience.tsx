@@ -1,27 +1,39 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-const ENTRIES = [
+type Entry = {
+  period: string;
+  role: string;
+  org: string;
+  logo?: string;
+  desc: string;
+};
+
+const ENTRIES: Entry[] = [
   {
-    period: "2023 → Present",
-    role: "Computer Science Student",
+    period: "Jan 2025 → Present",
+    role: "Software Engineer Assistant .NET — Payment",
+    org: "Betclic Group",
+    logo: "/logos/betclic.svg",
+    desc: "Part of the Payment domain team, owning microservices end-to-end: .NET backend, CI/CD pipelines, observability with Datadog, security with Wiz and SonarQube, hosted on AWS and Azure.",
+  },
+  {
+    period: "Sep 2024 → Present",
+    role: "Master in Computer Science",
     org: "Epitech — European Institute of Technology",
-    desc: "Intensive project-based curriculum: systems programming in C/C++, algorithms, full-stack web, DevOps, and a strong culture of shipping real software fast.",
+    logo: "/logos/epitech.svg",
+    desc: "Intensive project-based curriculum: systems programming, algorithms, full-stack web, DevOps, and a strong culture of shipping real software fast.",
   },
   {
-    period: "2025",
-    role: "Portfolio & Open Source",
-    org: "Personal Projects",
-    desc: "Designing and building side projects — 3D graphics experiments with Three.js, open-source contributions, and this very portfolio.",
-  },
-  {
-    period: "2024",
-    role: "Full-Stack Development",
-    org: "Freelance & School Projects",
-    desc: "Delivered web applications end-to-end: REST APIs, React frontends, PostgreSQL databases, deployed on Linux with Docker.",
+    period: "Mar 2024 → Jul 2024",
+    role: "Full-Stack Developer Intern",
+    org: "Aptimiz",
+    logo: "/logos/aptimiz.svg",
+    desc: "5-month internship building full-stack features with TypeScript, Next.js, Vue, and Nuxt — delivering UI components, REST APIs, and test coverage with Jest.",
   },
 ];
 
@@ -73,6 +85,17 @@ export default function Experience() {
 
               {/* Role + org */}
               <div>
+                {entry.logo && (
+                  <div className="h-10 w-32 mb-4 flex items-center overflow-hidden">
+                    <Image
+                      src={entry.logo}
+                      alt={entry.org}
+                      width={128}
+                      height={40}
+                      className="object-contain"
+                    />
+                  </div>
+                )}
                 <p
                   className="text-base font-bold text-zinc-900 dark:text-white mb-1 leading-tight"
                   style={{ fontFamily: "var(--font-syne)" }}
